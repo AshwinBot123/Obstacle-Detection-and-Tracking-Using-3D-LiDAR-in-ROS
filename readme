@@ -1,0 +1,7 @@
+ implementing real-time obstacle detection and tracking using 3D LiDAR data, integrated with IMU and odometry for precise drone state estimation. It processes raw LiDAR point clouds to identify and cluster obstacles, computes their positions and velocities in the global frame, and predicts future positions using velocity-based models. Key features include:
+
+    3D LiDAR Point Cloud Processing: Efficient clustering with DBSCAN for obstacle identification.
+    Global Frame Estimation: Converts drone body-frame velocity and pose to the global frame using IMU and odometry data.
+    Obstacle Tracking: Matches detected obstacles with tracked ones using the Hungarian algorithm and adaptive velocity smoothing.
+    Prediction and Visualization: Predicts future positions of dynamic obstacles and visualizes them in RViz with markers.
+    JSON Data Publishing: Publishes detailed obstacle data, including positions, velocities, and predictions, for downstream processing.
